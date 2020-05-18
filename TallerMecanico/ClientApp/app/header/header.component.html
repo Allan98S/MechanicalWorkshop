@@ -1,0 +1,45 @@
+﻿<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">Taller Mec&aacute;nico</a>
+    </div>
+    <ul class="nav navbar-nav">
+
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cliente <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#" (click)="onSelect('registroCliente')">Registro Cliente</a>
+                <li><a href="#" (click)="onSelect('mantenimientoCliente')">Mantenimiento Cliente</a>
+                <li><a href="#" (click)="onSelect('borrarCliente')">Borrar Cliente</a>
+
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Veh&iacute;culo <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#" (click)="onSelect('registrarProducto')">Registrar Veh&iacute;culo</a>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">OrdenTrabajo <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#" (click)="onSelect('registrarOrdenTrabajo')">Registrar orden</a>
+                <li><a href="#" (click)="onSelect('agregarDetalleOrden')">Agregar detalle  a la orden</a>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reporte <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#" (click)="onSelect('generarReporte')">Generar reporte orden</a>
+               
+            </ul>
+        </li>
+    </ul>
+</div>
+</nav>
+
+

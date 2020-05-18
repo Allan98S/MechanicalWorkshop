@@ -1,0 +1,9 @@
+﻿<app-cliente (featureSelected)="onNavigate($event)"></app-cliente>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <app-cliente-buscar *ngIf="loadedFeature==='cliente-listar'"></app-cliente-buscar>
+            <app-cliente-editar *ngIf="loadedFeature==='cliente-editar'"></app-cliente-editar>
+        </div>
+    </div>
+</div>

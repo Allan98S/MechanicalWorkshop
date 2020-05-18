@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TallerMecanico", "TallerMecanico.csproj", "{76ED275E-D3EC-44C6-B245-375B9C3117F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TallerMecanicoLibrary", "..\TallerMecanicoLibrary\TallerMecanicoLibrary\TallerMecanicoLibrary.csproj", "{30F3616D-6AD0-4A5A-A7CB-5DB260B249E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76ED275E-D3EC-44C6-B245-375B9C3117F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76ED275E-D3EC-44C6-B245-375B9C3117F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76ED275E-D3EC-44C6-B245-375B9C3117F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76ED275E-D3EC-44C6-B245-375B9C3117F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30F3616D-6AD0-4A5A-A7CB-5DB260B249E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F3616D-6AD0-4A5A-A7CB-5DB260B249E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F3616D-6AD0-4A5A-A7CB-5DB260B249E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F3616D-6AD0-4A5A-A7CB-5DB260B249E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {076E886F-3B4F-4D23-B1DC-A05C6557AC26}
+	EndGlobalSection
+EndGlobal

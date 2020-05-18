@@ -1,0 +1,62 @@
+﻿<h4>Informaci&oacute;n del cliente</h4>
+<div *ngFor="let item of cliente">
+    <form class="form-horizontal">
+        <div class="container col-xs-5 ">
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="nombre">Num Identificaci&oacute;n:</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" [(ngModel)]="identificacion" name="identificacion">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Nombre</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" [(ngModel)]="nombre" name="nombre">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Apellidos</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" [(ngModel)]="apellidos" name="apellidos">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Tel&eacute;fono</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" [(ngModel)]="telefono" name="telefono">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Tel&eacute;fono Celular</label>
+                <div class="col-sm-5">
+                    <input type="number" class="form-control" [(ngModel)]="telefonoCelular" name="telefonoCelular">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Email</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" [(ngModel)]="email" name="email">
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="container col-xs-4 ">
+            <div class="col-xs-10 col-lg-10">
+                Direcci&oacute;n :<textarea style="resize: none;" class="form-control" rows="5" [(ngModel)]="direccion" name="direccion"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-5">
+                <button (click)="modificarDatos()" class="form-horizontal btn btn-default" type="submit">Modificar</button>
+            </div>
+        </div>
+    </form>
+    <div *ngIf="getEstado()==true" id="confirmacion" class="alert alert-success">
+        <strong>Exito!</strong><a href="">Cliente ediado correctamente</a>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+﻿
+<body>
+    <h4>Detalle Trabajo</h4>
+    <div class="container">
+
+
+
+
+        <div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Seleccione la orden de trabajo</label>
+                <select class="form-control" [(ngModel)]="orden" name="orden">
+                    <option *ngFor="let item of ordenes" (click)="setOrden(item)"> N&uacute;mero orden: {{item.idOrden}}   Veh&iacute;culo: {{item.vehiculo.numPlaca}}</option>
+                </select>
+            </div>
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Ver cat&aacute;logo de productos</button>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Materiales disponibles</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label>Material producto:</label>
+                        <input type="text" [(ngModel)]="material" (input)="getProductosPorMaterial()" />
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Material</th>
+                                    <th>Precio</th>
+                                </tr>
+                                <tr *ngFor="let item of productos">
+                                    <td style="vertical-align:middle">{{item.material}}</td>
+                                    <td style="vertical-align:middle">{{item.precio }}</td>
+                                    <td style="vertical-align:middle"><button type="button" class="btn btn-success" (click)="agregar(item)">Agregar</button></td>
+                                </tr>
+                            </thead>
+                        </table>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       
+        <div class="col-xs-10 col-lg-10">
+            Descripcion :<textarea style="resize: none;" class="form-control" rows="5" [(ngModel)]="descripcion" name="descripcion"></textarea>
+        </div>
+    </div>
+    <div *ngIf="isEmpty()==false">
+        <p>Productos escogidos</p>
+        <ul  *ngFor="let producto of getProductosEscogidos()"   class="list-group" >
+            <li class="list-group-item disabled">{{producto.material}}</li>
+          
+        </ul>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-5">
+            <button (click)="registrar()" class="form-horizontal btn btn-default" type="submit">Registrar</button>
+        </div>
+        <div *ngIf="getEstado()==true" id="confirmacion" class="alert alert-success">
+            <strong>Exito!</strong><a href="">Detalle trabajo agregada con &eacute;xito</a>
+        </div>
+    </div>
+
+</body>
+
+
+

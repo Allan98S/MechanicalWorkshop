@@ -1,0 +1,62 @@
+﻿<script src=".../../test/pdf.js"></script>
+<div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Seleccione la orden de trabajo</label>
+        <select class="form-control" [(ngModel)]="orden" name="orden">
+            <option *ngFor="let item of ordenes" (click)="setOrden(item)"> N&uacute;mero orden: {{item.idOrden}}   Veh&iacute;culo: {{item.vehiculo.numPlaca}}</option>
+        </select>
+    </div>
+    <button id="cmd"  >Generar Reporte</button>
+
+</div>
+<div id="content" class="container-fluid">
+
+    <div *ngIf="isEmpty()==false">
+        <pre>
+        <h3>Taller Mec&aacute;nico Salazar</h3>
+        <h4>Taras, Cartago, Costa Rica 
+Tel&eacute;fono: 22-22-22-22 </h4>
+
+<strong>Detalles de la orden</strong>
+
+<h4>Cliente: </h4>
+<div *ngFor="let item of cliente">
+    Nombre: {{item.nombre}}
+    Apellidos:{{item.apellidos}}
+    Identificaci&oacute;n: {{item.numIdentificacion}}
+</div>
+
+<h4>Veh&iacute;culo</h4>
+<div *ngFor="let item of vehiculo">
+    Placa: {{item.numPlaca}}
+    Marca:{{item.marca}}
+    A&ntilde;o:{{item.anio}}
+</div>
+<h5>Detalles veh&iacute;culo</h5>
+<div *ngFor="let item of detalleVehiculo">
+    Observacion: {{item.observaciones}}
+    Detalle: {{item.tipoDetalle.descripcion}}
+    Estado: {{item.estado.descripcion}}
+</div>
+<h4>Datos de la orden:</h4>
+<div *ngFor="let item of ordenArray">
+    Descripci&oacute; de la solicitud: {{item.descripcionSolicitudTrabajo}}
+    Fecha apoximada: {{item.fecha}}
+</div>
+<div *ngFor="let item of detalleTrabajo">
+        <h5>Detalles Trabajo:</h5>
+    Precio total: {{item.precioTotal}}
+    Descripcion: {{item.descripcion}}
+
+        <div *ngFor="let item2 of productos">
+        <h5>Productos usados:</h5>
+        Material: {{item2.material}}
+        Precio material:{{item2.precio}}
+    </div>
+</div>
+</pre>
+        <h3>Costo total del trabajo : {{precioTotal}} (i.v.i)</h3>
+    </div>
+</div>
+<div id="editor"></div>
+

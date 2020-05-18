@@ -1,0 +1,124 @@
+﻿
+
+<h4>Registro de Orden</h4>
+<div>
+    <form class="form-horizontal">
+
+        <div class="container col-xs-5 ">
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="fechaCita"> Fecha de la cita</label>
+                <div class="col-sm-5">
+                    <input type="date" class="form-control" [(ngModel)]="fecha" name="fecha">
+
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="exampleInputPassword1">Cliente</label>
+                <div class="col-sm-5">
+                    <select class="form-control " [(ngModel)]="clienteIdentificacion" name="clienteIdentificacion">
+                        <option *ngFor="let cliente of clientes" (click)="setCliente(cliente)"> {{cliente.numIdentificacion}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="exampleInputPassword1">Placa</label>
+                <div class="col-sm-5">
+                    <select class="form-control col-sm-2" [(ngModel)]="vehiculoPlaca" name="vehiculoPlaca">
+                        <option *ngFor="let vehiculo of vehiculos" (click)="setVehiculo(vehiculo)"> {{vehiculo.numPlaca}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-10 col-lg-10">
+                    Descripcion de la solicitud de trabajo :<textarea style="resize: none;" class="form-control" rows="5" [(ngModel)]="descripcion" name="descripcion"></textarea>
+                </div>
+
+
+
+            </div>
+            <div *ngIf="isEmpty()==false">
+                <p>Detalles agregados</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Observaci&oacute;n</th>
+                            <th>Estado</th>
+                            <th>Detalle</th>
+                        </tr>
+                        <tr *ngFor="let item of getDetallesVehiculoRealizados()">
+                            <td style="vertical-align:middle">{{item.observaciones}}</td>
+                            <td style="vertical-align:middle">{{item.estado.descripcion}}</td>
+                            <td style="vertical-align:middle">{{item.tipoDetalle.descripcion}} </td>
+                        </tr>
+                    </thead>
+
+                </table>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm=5">
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Agregar Detalles de Veh&iacute;culo </button>
+
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Detalles del veh&iacute;culo</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="fechaCita"> Observacion</label>
+                                        <div class="col-sm-5">
+                                            <input type="text" class="form-control" [(ngModel)]="observacion" name="observacion">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="fechaCita"> Detalle</label>
+                                        <div class="col-sm-5">
+                                            <input type="text" class="form-control" [(ngModel)]="detalle" name="detalle">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="fechaCita"> Estado</label>
+                                        <div class="col-sm-5">
+                                            <input type="text" class="form-control" [(ngModel)]="estado" name="estado">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-5">
+                                            <button (click)="registrarDetalle()" class="form-horizontal btn btn-default" type="submit">Registrar Detalle</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>   <!-- Modal content-->
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-5">
+                <button (click)="registrar()" class="form-horizontal btn btn-default" type="submit">Registrar</button>
+            </div>
+        </div>
+    </form>
+    <div *ngIf="getEstado()==true" id="confirmacion" class="alert alert-success">
+        <strong>Exito!</strong><a href="">Orden agregada con &eacute;xito</a>
+    </div>
+</div>

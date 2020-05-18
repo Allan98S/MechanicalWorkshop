@@ -1,0 +1,39 @@
+﻿<div class="container">
+    <div class="form-group">
+        <label>Seleccione el  veh&iacute;culo: </label>
+        <input class="form-control" [(ngModel)]="numeroPlaca" placeholder="Placa" />
+        <button class="btn btn-primary" (click)="getVehiculosPorPlaca()">Buscar</button>
+    </div>
+    <h2>Veh&iacute;culos actuales del sistema</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Placa</th>
+                <th>Color</th>
+                <th>Marca</th>
+                <th>Estilo</th>
+                <th>A&ntilde;o</th>
+                <th>Observaciones</th>
+
+            </tr>
+
+            <tr *ngFor="let item of vehiculos">
+                <td style="vertical-align:middle">{{item.numPlaca}}</td>
+                <td style="vertical-align:middle">{{item.color }}</td>
+                <td style="vertical-align:middle">{{item.marca }}</td>
+                <td style="vertical-align:middle">{{item.estilo}}</td>
+                <td style="vertical-align:middle">{{item.anio}}</td>
+                <td style="vertical-align:middle">{{item.observaciones}}</td>
+
+                <td><a (click)="modificarDatos(item)">Modificar</a>
+
+
+
+            </tr>
+        </thead>
+
+    </table>
+</div>
+
+
+

@@ -1,0 +1,20 @@
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+        <script src=".../../../test/pdf.js"></script>
+    
+</head>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <app-cliente-registro *ngIf="loadedFeature==='registroCliente'"></app-cliente-registro>
+            <app-cliente-header *ngIf="loadedFeature==='mantenimientoCliente'"></app-cliente-header>
+            <app-cliente-borrar *ngIf="loadedFeature==='borrarCliente'"></app-cliente-borrar>
+            <app-vehiculo-registrar *ngIf="loadedFeature==='registrarProducto'"></app-vehiculo-registrar>
+            <app-ordenTrabajo *ngIf="loadedFeature==='registrarOrdenTrabajo'"></app-ordenTrabajo>
+            <app-detalleOrden *ngIf="loadedFeature==='agregarDetalleOrden'"></app-detalleOrden>
+            <app-reporte *ngIf="loadedFeature==='generarReporte'"></app-reporte>
+        </div>
+    </div>
+</div>

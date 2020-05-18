@@ -1,0 +1,23 @@
+C:\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\bin\Debug\netstandard2.0\TallerMecanicoLibrary.deps.json
+C:\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\bin\Debug\netstandard2.0\TallerMecanicoLibrary.dll
+C:\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\bin\Debug\netstandard2.0\TallerMecanicoLibrary.pdb
+C:\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\bin\Debug\netstandard2.0\System.Data.SqlClient.dll
+C:\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\bin\Debug\netstandard2.0\System.Data.SqlClient.xml
+C:\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.csprojResolveAssemblyReference.cache
+C:\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.csproj.CoreCompileInputs.cache
+C:\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.AssemblyInfoInputs.cache
+C:\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.AssemblyInfo.cs
+C:\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.csproj.CopyComplete
+C:\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.dll
+C:\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.pdb
+C:\Proyecto2 B66946 B6755\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\bin\Debug\netstandard2.0\TallerMecanicoLibrary.deps.json
+C:\Proyecto2 B66946 B6755\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\bin\Debug\netstandard2.0\TallerMecanicoLibrary.dll
+C:\Proyecto2 B66946 B6755\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\bin\Debug\netstandard2.0\TallerMecanicoLibrary.pdb
+C:\Proyecto2 B66946 B6755\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\bin\Debug\netstandard2.0\System.Data.SqlClient.dll
+C:\Proyecto2 B66946 B6755\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.csproj.CoreCompileInputs.cache
+C:\Proyecto2 B66946 B6755\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.AssemblyInfoInputs.cache
+C:\Proyecto2 B66946 B6755\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.AssemblyInfo.cs
+C:\Proyecto2 B66946 B6755\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.csproj.CopyComplete
+C:\Proyecto2 B66946 B6755\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.dll
+C:\Proyecto2 B66946 B6755\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.pdb
+C:\Proyecto2 B66946 B6755\ProyectoTallerMecanico\TallerMecanicoLibrary\TallerMecanicoLibrary\obj\Debug\netstandard2.0\TallerMecanicoLibrary.csprojAssemblyReference.cache

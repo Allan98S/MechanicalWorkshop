@@ -1,0 +1,37 @@
+﻿<div class="container">
+    <div class="form-group">
+        <label>Busque el cliente que  desea borrar  por su identificaci&ocirc;n </label>
+        <input class="form-control" [(ngModel)]="identificacion" placeholder="Identificacion" />
+        <button class="btn btn-primary" (click)="getClientePorIdentificacion(identificacion)">Buscar</button>
+    </div>
+    <h2>Clientes actuales del sistema</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Identificaci&oacute;n</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Direcci&oacute;n</th>
+                <th>Tel&eacute;fono</th>
+                <th>Celular</th>
+                <th>Correo</th>
+
+            </tr>
+
+            <tr *ngFor="let item of clientes">
+                <td style="vertical-align:middle">{{item.numIdentificacion}}</td>
+                <td style="vertical-align:middle">{{item.nombre }}</td>
+                <td style="vertical-align:middle">{{item.apellidos }}</td>
+                <td style="vertical-align:middle">{{item.direccion}}</td>
+                <td style="vertical-align:middle">{{item.telefono}}</td>
+                <td style="vertical-align:middle">{{item.telefonoCelular}}</td>
+                <td style="vertical-align:middle">{{item.correo}}</td>
+                <td><a (click)="borrarDatos(item)">Suprimir</a>
+
+
+
+            </tr>
+        </thead>
+
+    </table>
+</div>
